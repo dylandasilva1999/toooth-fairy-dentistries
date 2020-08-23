@@ -1,0 +1,1010 @@
+/*
+
+Colours:
+
+Blue: #2a58ae, 5 73 114
+GreenBlue: #A0EACF, 167 218 199
+Lightgray: #E5E5E5, 229 229 229
+
+*/
+
+/*
+
+BODY COPY FONTS
+
+*/
+
+@font-face {
+  font-family: "proxima_novabold";
+  src: url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_novaregular";
+  src: url("../fonts/proximanova-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_novathin";
+  src: url("../fonts/proxima_nova_thin-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+
+STYLISED FONTS
+
+*/
+
+@font-face {
+  font-family: "qanelas_softbold";
+  src: url("../fonts/radomir_tinkov__qanelassoftbold-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softextrabold";
+  src: url("../fonts/radomir_tinkov__qanelassoftextrabold-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softlight";
+  src: url("../fonts/radomir_tinkov__qanelassoftlight-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softregular";
+  src: url("../fonts/radomir_tinkov__qanelassoftregular-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softsemibold_italic";
+  src: url("../fonts/radomir_tinkov__qanelassoftsemibolditalic-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softthin";
+  src: url("../fonts/radomir_tinkov__qanelassoftthin-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: "qanelas_softbold";
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.log-out:focus, .yes-btn:focus, .log-out:focus, .no-btn:focus, .assign-room:focus, .appointments:focus, [type="submit"]:focus {
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.profile-img img{
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 00px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+    font-family: "qanelas_softbold";
+    letter-spacing: 2px;
+}
+
+.role {
+    font-family: "qanelas_softlight";
+    margin-top: -20px;
+}
+
+.logo-name {
+    font-family: "qanelas_softbold";
+    color: #fff;
+    font-size: 20px;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wrapper .sidebar {
+  position: relative;
+}
+
+.wrapper .sidebar .bg-shadow {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.wrapper .sidebar-inner {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2a58ae;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.wrapper .main-container {
+  margin-top: 5vh;
+  margin-left: 12%;
+  width: calc(97% - 300px);
+  transition: all 0.3s ease;
+
+}
+
+.wrapper .sidebar-inner .profile-info {
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-img {
+  width: 125px;
+  margin: 0 auto 15px;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-img img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .role {
+  font-weight: 300;
+  color: #88a3d0;
+  margin-bottom: 15px;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .btn {
+  padding: 10px;
+  border: 1px solid #1fafec;
+  border-radius: 25px;
+  color: #1fafec;
+  cursor: pointer;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .btn:hover {
+  background: #1fafec;
+  color: #fff;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a {
+  padding: 10px 50px;
+  display: block;
+  height: 70px;
+  position: relative;
+  margin-bottom: 1px;
+  color: #88a3d0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "proxima_novaregular";
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a i{
+    margin-top: 16px;
+}
+
+.fa-cube {
+    padding-right: 15px;
+}
+
+.fa-user-md {
+    padding-right: 20px;
+    margin-left: -24px;
+}
+
+.fa-users {
+    padding-right: 16px;
+    margin-left: -25px;
+}
+
+.fa-calendar {
+    padding-right: 20px;
+    margin-left: -16px;
+}
+
+.fa-question-circle {
+    padding-right: 20px;
+    margin-left: -16px;
+}
+
+.fa-user {
+    padding-right: 20px;
+    margin-left: -38px;
+}
+
+#log-out-btn {
+  margin-left: 18%;
+  margin-top: 30vh;
+}
+
+.log-out {
+  border-radius: 50px;
+  border: 2px solid white;
+  background: transparent;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+}
+
+.yes-btn {
+  border-radius: 50px;
+  border: 2px solid white;
+  background: #2a58ae;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+  margin-left: 22%;
+}
+
+.no-btn {
+  border-radius: 50px;
+  border: 2px solid white;
+  background: #F15F24;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 40px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+.text-muted {
+  font-size: 18px;
+  margin-left: 4%;
+}
+
+button.log-out {
+    transition: all 0.3s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.log-out:hover{
+    letter-spacing: 0.170rem;
+    background: #F15F24;
+    transition: all 0.3s ease-in-out;
+}
+
+button.log-out:hover {
+    letter-spacing: 0.170rem;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  display: none;
+  transition: all ease 300ms;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a:hover,
+.wrapper .sidebar-inner .sidebar-menu li a.active {
+  background: #F15F24;
+  color: #fff;
+  transform: scale(1.1);
+  border-radius: 0px 50px 50px 0px;
+  transition: all ease 300ms;
+  transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+  letter-spacing: 0.13rem;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a:hover:before,
+.wrapper .sidebar-inner .sidebar-menu li a.active:before {
+  display: block;
+}
+
+.wrapper .main-container .top-navbar {
+  width: calc(100% - 250px);
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+  z-index: 99;
+  background-color: #1d4c9e;
+  transition: all 0.3s ease;
+}
+
+.wrapper .main-container .top-navbar .hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+}
+
+.wrapper .main-container .top-navbar .hamburger .fas {
+  color: #88a3d0;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .main-container .top-navbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .main-container .top-navbar .menu li a {
+  margin: 0 15px;
+  padding: 0 15px;
+  position: relative;
+  color: #1d4c9e;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wrapper .main-container .top-navbar .menu li a:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1fafec;
+  display: none;
+}
+
+.illustration {
+  width: 280px;
+  height: 280px;
+  background-image: url("../img/undraw_feeling_proud_qne1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  margin-left: 13%;
+}
+
+.wrapper .main-container .top-navbar .menu li a.active,
+.wrapper .main-container .top-navbar .menu li a:hover {
+  color: #1fafec;
+}
+
+.wrapper .main-container .top-navbar .menu li a:hover:before,
+.wrapper .main-container .top-navbar .menu li a.active:before {
+  display: block;
+}
+
+.wrapper .main-container .top-navbar .right-bar {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .main-container .top-navbar .right-bar li {
+  margin: 0 10px;
+}
+
+.wrapper .main-container .top-navbar .right-bar .fas {
+  font-size: 25px;
+  cursor: pointer;
+  color: #88a3d0;
+}
+
+.wrapper .main-container .top-navbar .right-bar li:hover,
+.wrapper .main-container .top-navbar .hamburger .fas:hover {
+  opacity: 0.5;
+}
+
+.wrapper .main-container .container {
+  padding: 30px;
+  margin-top: 60px;
+}
+
+.wrapper .main-container .container .item {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #d9e2e7;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.wrapper .sidebar-inner .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 25px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+
+.wrapper .sidebar-inner .close:hover {
+  opacity: 0.5;
+}
+
+.card {
+  width: 26rem;
+  margin-left: 4.8%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  height: 180px;
+}
+
+.total-patients-icon {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 35px;
+  float: left;
+  background-image: url("../img/patient.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.total-doctors-icon {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 35px;
+  float: left;
+  background-image: url("../img/doctors.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.total-appointments-icon {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 35px;
+  float: left;
+  background-image: url("../img/appointments.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.total-rooms-icon {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-top: 35px;
+  float: left;
+  background-image: url("../img/rooms.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.vertical-line {
+  width: 6px;
+  height: 40px;
+  background-color: #F15F24;
+  float: left;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+
+#total-patients {
+  float: left;
+  margin-left: 9%;
+  margin-top: 40px;
+  font-family: "proxima_novabold";
+  opacity: 1;
+  font-size: 30px;
+}
+
+#total-doctors {
+  float: left;
+  margin-left: 9%;
+  margin-top: 40px;
+  font-family: "proxima_novabold";
+  opacity: 1;
+  font-size: 30px;
+}
+
+#total-appointments {
+  float: left;
+  margin-left: 9%;
+  margin-top: 40px;
+  font-family: "proxima_novabold";
+  opacity: 1;
+  font-size: 30px;
+}
+
+#total-rooms {
+  float: left;
+  margin-left: 9%;
+  margin-top: 40px;
+  font-family: "proxima_novabold";
+  opacity: 1;
+  font-size: 30px;
+}
+
+#card-text {
+  float: right;
+  margin-right: 14%;
+  margin-top: -10px;
+  font-family: "proxima_novaregular";
+  opacity: 0.5;
+  font-size: 22px;
+}
+
+.line-chart {
+  width: 58.5rem;
+  height: 28rem;
+  margin-top: 65px;
+}
+
+#line-chart {
+  width: 26rem;
+  height: 28rem;
+  margin-top: 30px;
+}
+
+.male-female-card {
+  width: 26rem;
+  height: 28rem;
+  margin-top: 65px;
+}
+
+.employee-of-the-month-card {
+  height: 28rem;
+  margin-top: 65px;
+  background: #F15F24;
+}
+
+.upcoming-appointments-card {
+  width: 91rem;
+  height: 23rem;
+  margin-top: 65px;
+}
+
+.employees-card {
+  width: 26rem;
+  height: 23rem;
+  margin-top: 65px;
+  background: #1d4c9e;
+}
+
+#employees {
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+#employee-of-the-month {
+  font-family: "proxima_novabold";
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 20px;
+}
+
+#employee {
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 20px;
+  font-size: 20px;
+  float: left;
+}
+
+.employee-img img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  float: left;
+  margin-left: 10%;
+  object-fit: cover;
+  border: 3px solid #fff;
+}
+
+.employee-name-img img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 18%;
+  border: 3px solid #fff;
+  float: left;
+  margin-top: 10px;
+}
+
+#employee-name {
+  float: left;
+  margin-left: 5%;
+  padding-top: 10px;
+  color: #fff;
+}
+
+#upcoming-text {
+  float: left;
+  margin-left: 5%;
+  margin-top: 0px;
+  color: #fff;
+}
+
+.tube {
+  width: 90%;
+  height: 70px;
+  margin-left: 5%;
+  padding-top: 10px;
+  margin-top: 20px;
+  border-radius: 50px;
+  background-color: #F15F24;
+}
+
+.patient img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 9%;
+  border: 3px solid #fff;
+  float: left;
+  margin-top: 40px;
+  border: 3px solid #1d4c9e;
+}
+
+#patient-name {
+  float: left;
+  padding-top: 40px;
+  margin-left: 40px;
+  font-family: "proxima_novabold";
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+#patient-medical-number {
+  float: left;
+  padding-top: 40px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+#appointment-time {
+  float: left;
+  padding-top: 40px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper .sidebar-inner {
+    left: -100%;
+  }
+  .wrapper .main-container,
+  .wrapper .main-container .top-navbar {
+    margin-left: 0;
+    width: 100%;
+  }
+  .wrapper .main-container .top-navbar {
+    left: 0;
+  }
+  .wrapper.active .sidebar-inner {
+    left: 0;
+  }
+  .wrapper .sidebar-inner .close,
+  .wrapper .main-container .top-navbar .hamburger {
+    display: block;
+  }
+  .wrapper.active .sidebar .bg-shadow {
+    visibility: visible;
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .wrapper .main-container .top-navbar .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper .main-container .top-navbar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .cards {
+    width: 20rem;
+    margin-left: 3%;
+    margin-top: 50px;
+  }
+  .card {
+    margin-top: 10px;
+    margin-left: 3%;
+  }
+  .total-patients-icon {
+    margin-left: 8%;
+  }
+  .total-doctors-icon {
+    margin-left: 8%;
+  }
+  .total-appointments-icon {
+    margin-left: 8%;
+  }
+  .total-rooms-icon {
+    margin-left: 8%;
+  }
+  .vertical-line {
+    margin-left: 5%;
+  }
+  #card-text {
+    font-size: 16px;
+  }
+  .line-chart {
+    width: 20rem;
+    height: 25rem;
+    margin-left: 8%;
+  }
+  #line-chart {
+    width: 20rem;
+  }
+  .employee-of-the-month-card {
+    width: 19.8rem;
+    height: 25rem;
+  }
+  .male-female-card {
+    width: 19.8rem;
+    margin-left: 8%;
+    height: 25rem;
+  }
+  .male-female-patients {
+    margin-top: -35px;
+  }
+  .illustration {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .employees-card {
+    width: 41rem;
+    margin-left: 8.5%;
+    margin-top: 30px;
+  }
+  .employee-name-img {
+    margin-left: -18%;
+  }
+  .upcoming-appointments-card {
+    width: 65.5rem;
+  }
+  #employees {
+    text-align: center;
+    padding-right: 50px;
+  }
+  #patient-name {
+    margin-left: 8%;
+  }
+  #patient-medical-number {
+    margin-left: 8%;
+  }
+  #appointment-time {
+    margin-left: 8%;
+  }
+  .patient {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 768px) {
+  .cards {
+    margin-left: 3%;
+    margin-top: 50px;
+  }
+  .card {
+    width: 20rem;
+    margin-top: 10px;
+    margin-left: 3%;
+  }
+  .total-patients-icon {
+    margin-left: 8%;
+  }
+  .total-doctors-icon {
+    margin-left: 8%;
+  }
+  .total-appointments-icon {
+    margin-left: 8%;
+  }
+  .total-rooms-icon {
+    margin-left: 8%;
+  }
+  .vertical-line {
+    margin-left: 5%;
+  }
+  #card-text {
+    font-size: 18px;
+  }
+  .line-chart {
+    width: 41rem;
+    height: 25rem;
+    margin-left: 8%;
+  }
+  #line-chart {
+    width: 40rem;
+  }
+  .employee-of-the-month-card {
+    width: 19.8rem;
+    height: 25rem;
+  }
+  .male-female-card {
+    width: 19.8rem;
+    margin-left: 8%;
+    height: 25rem;
+  }
+  .male-female-patients {
+    margin-top: -35px;
+  }
+  .illustration {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .employees-card {
+    width: 41rem;
+    margin-left: 8.5%;
+    margin-top: 30px;
+  }
+  .employee-name-img {
+    margin-left: -18%;
+  }
+  .upcoming-appointments-card {
+    width: 41rem;
+    margin-left: 8%;
+  }
+  #employees {
+    text-align: center;
+    padding-right: 50px;
+  }
+  #patient-name {
+    margin-left: 8%;
+  }
+  #patient-medical-number {
+    margin-left: 8%;
+  }
+  #appointment-time {
+    margin-left: 8%;
+  }
+  .patient {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (min-width: 1919px) and (max-width: 1921px){
+  .cards {
+    margin-left: 5%;
+    margin-top: -30px;
+  }
+  .card {
+    width: 20rem;
+    margin-top: 10px;
+    margin-left: 3%;
+  }
+  .line-chart {
+    width: 42.5rem;
+    height: 25rem;
+    margin-left: 8.5%;
+  }
+  #line-chart {
+    width: 52rem;
+  }
+  #card-text {
+    font-size: 18px;
+  }
+  .vertical-line {
+    margin-left: 5%;
+  }
+  .total-patients-icon {
+    margin-left: 8%;
+  }
+  .total-doctors-icon {
+    margin-left: 8%;
+  }
+  .total-appointments-icon {
+    margin-left: 8%;
+  }
+  .total-rooms-icon {
+    margin-left: 8%;
+  }
+  .employee-of-the-month-card {
+    height: 25rem;
+  }
+  .male-female-card {
+    height: 25rem;
+  }
+  .male-female-patients {
+    margin-top: -35px;
+  }
+  .illustration {
+    width: 80%;
+    margin-left: 10%;
+  }
+  .employees-card {
+    margin-left: 8.5%;
+    margin-top: 10px;
+  }
+  .upcoming-appointments-card {
+    width: 65.5rem;
+  }
+  #patient-name {
+    margin-left: 2%;
+  }
+  #patient-medical-number {
+    margin-left: 2%;
+  }
+  #appointment-time {
+    margin-left: 2%;
+  }
+  .patient {
+    margin-left: -5%;
+  }
+}

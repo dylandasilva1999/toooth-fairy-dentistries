@@ -1,0 +1,1126 @@
+/*
+
+Colours:
+
+Blue: #2a58ae, 5 73 114
+GreenBlue: #A0EACF, 167 218 199
+Lightgray: #E5E5E5, 229 229 229
+
+*/
+
+/*
+
+BODY COPY FONTS
+
+*/
+
+@font-face {
+  font-family: "proxima_novabold";
+  src: url("../fonts/proxima_nova_bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_novaregular";
+  src: url("../fonts/proximanova-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "proxima_novathin";
+  src: url("../fonts/proxima_nova_thin-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+    
+    STYLISED FONTS
+    
+    */
+
+@font-face {
+  font-family: "qanelas_softbold";
+  src: url("../fonts/radomir_tinkov__qanelassoftbold-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softextrabold";
+  src: url("../fonts/radomir_tinkov__qanelassoftextrabold-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softlight";
+  src: url("../fonts/radomir_tinkov__qanelassoftlight-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softregular";
+  src: url("../fonts/radomir_tinkov__qanelassoftregular-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softsemibold_italic";
+  src: url("../fonts/radomir_tinkov__qanelassoftsemibolditalic-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "qanelas_softthin";
+  src: url("../fonts/radomir_tinkov__qanelassoftthin-webfont.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+    
+    STRIP THE BOX
+    
+    */
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0eacf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #73a895;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "proxima_novaregular";
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: "qanelas_softbold";
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  margin: 20px 0 30px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 16px;
+}
+
+.log-out:focus, .yes-btn:focus, .log-out:focus, .no-btn:focus, .assign-room:focus, .appointments:focus, [type="submit"]:focus {
+  outline: none;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.profile-img img {
+  margin-top: 20px;
+  border-radius: 50%;
+  box-shadow: 00px 5px 12px rgba(0, 0, 0, 0.3);
+}
+
+.name {
+  font-family: "qanelas_softbold";
+  letter-spacing: 2px;
+}
+
+.role {
+  font-family: "qanelas_softlight";
+  margin-top: -20px;
+}
+
+.logo-name {
+  font-family: "qanelas_softbold";
+  color: #fff;
+  font-size: 20px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wrapper .sidebar {
+  position: relative;
+}
+
+.wrapper .sidebar .bg-shadow {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.wrapper .sidebar-inner {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #2a58ae;
+  z-index: 999;
+  transition: all 0.3s ease;
+}
+
+.wrapper .main-container {
+  margin-top: 5vh;
+  margin-left: 12%;
+  width: calc(97% - 300px);
+  transition: all 0.3s ease;
+}
+
+.wrapper .sidebar-inner .profile-info {
+  padding: 30px 50px;
+  text-align: center;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-img {
+  width: 125px;
+  margin: 0 auto 15px;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-img img {
+  width: 100%;
+  display: block;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .role {
+  font-weight: 300;
+  color: #88a3d0;
+  margin-bottom: 15px;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .btn {
+  padding: 10px;
+  border: 1px solid #1fafec;
+  border-radius: 25px;
+  color: #1fafec;
+  cursor: pointer;
+}
+
+.wrapper .sidebar-inner .profile-info .profile-data .btn:hover {
+  background: #1fafec;
+  color: #fff;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a {
+  padding: 10px 50px;
+  display: block;
+  height: 70px;
+  position: relative;
+  margin-bottom: 1px;
+  color: #88a3d0;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "proxima_novaregular";
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a i {
+  margin-top: 16px;
+}
+
+.fa-cube {
+  padding-right: 15px;
+}
+
+.fa-user-md {
+  padding-right: 20px;
+  margin-left: -24px;
+}
+
+.fa-users {
+  padding-right: 16px;
+  margin-left: -25px;
+}
+
+.fa-calendar {
+  padding-right: 20px;
+  margin-left: -16px;
+}
+
+.fa-question-circle {
+  padding-right: 20px;
+  margin-left: -16px;
+}
+
+.fa-user {
+  padding-right: 20px;
+  margin-left: -38px;
+}
+
+#log-out-btn {
+  margin-left: 18%;
+  margin-top: 30vh;
+}
+
+.log-out {
+  border-radius: 50px;
+  border: 2px solid white;
+  background: transparent;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+}
+
+.yes-btn {
+  border-radius: 50px;
+  border: 2px solid white;
+  background: #2a58ae;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+  margin-left: 22%;
+}
+
+.no-btn {
+  border-radius: 50px;
+  border: 2px solid white;
+  background: #f15f24;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+.text-muted {
+  font-size: 18px;
+  margin-left: 4%;
+}
+
+button.log-out {
+  transition: all 0.3s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.log-out:hover {
+  letter-spacing: 0.17rem;
+  background: #f15f24;
+  transition: all 0.3s ease-in-out;
+}
+
+button.log-out:hover {
+  letter-spacing: 0.17rem;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  display: none;
+  transition: all ease 300ms;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a:hover,
+.wrapper .sidebar-inner .sidebar-menu li a.active {
+  background: #f15f24;
+  color: #fff;
+  transform: scale(1.1);
+  border-radius: 0px 50px 50px 0px;
+  transition: all ease 300ms;
+  transition: all 0.4s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+  letter-spacing: 0.13rem;
+}
+
+.wrapper .sidebar-inner .sidebar-menu li a:hover:before,
+.wrapper .sidebar-inner .sidebar-menu li a.active:before {
+  display: block;
+}
+
+.wrapper .main-container .top-navbar {
+  width: calc(100% - 250px);
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  position: fixed;
+  top: 0;
+  left: 250px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.125);
+  background-color: #1d4c9e;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.wrapper .main-container .top-navbar .hamburger {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: none;
+}
+
+.wrapper .main-container .top-navbar .hamburger .fas {
+  color: #88a3d0;
+  font-size: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .main-container .top-navbar .menu {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .main-container .top-navbar .menu li a {
+  margin: 0 15px;
+  padding: 0 15px;
+  position: relative;
+  color: #1d4c9e;
+  font-weight: 400;
+  text-align: center;
+}
+
+.wrapper .main-container .top-navbar .menu li a:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #1fafec;
+  display: none;
+}
+
+.wrapper .main-container .top-navbar .menu li a.active,
+.wrapper .main-container .top-navbar .menu li a:hover {
+  color: #1fafec;
+}
+
+.wrapper .main-container .top-navbar .menu li a:hover:before,
+.wrapper .main-container .top-navbar .menu li a.active:before {
+  display: block;
+}
+
+.wrapper .main-container .top-navbar .right-bar {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .main-container .top-navbar .right-bar li {
+  margin: 0 10px;
+}
+
+.wrapper .main-container .top-navbar .right-bar .fas {
+  font-size: 25px;
+  cursor: pointer;
+  color: #88a3d0;
+}
+
+.wrapper .main-container .top-navbar .right-bar li:hover,
+.wrapper .main-container .top-navbar .hamburger .fas:hover {
+  opacity: 0.5;
+}
+
+.wrapper .main-container .container {
+  padding: 30px;
+  margin-top: 60px;
+}
+
+.wrapper .main-container .container .item {
+  background: #fff;
+  padding: 20px;
+  border-bottom: 1px solid #d9e2e7;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.wrapper .sidebar-inner .close {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 25px;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
+
+.wrapper .sidebar-inner .close:hover {
+  opacity: 0.5;
+}
+
+.card {
+  margin-left: 4.8%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  height: 180px;
+}
+
+.card-container {
+  margin-left: 4.8%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  height: 180px;
+}
+
+.cards {
+  margin-left: 4.8%;
+}
+
+.one {
+    margin-top: 70px;
+}
+
+.search-container {
+  width: 40%;
+  margin-top: 5px;
+  float: left;
+  margin-left: 45%;
+}
+
+.search-bar {
+  width: 90%;
+  border-radius: 0px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #1d4c9e;
+  padding: 10px;
+}
+
+.search {
+  border: none;
+  background: none;
+}
+
+.search-icon {
+  width: 20px;
+}
+
+.intro {
+    background-color: #f15f24;
+    width: 58rem;
+    height: 30vh;
+}
+
+.gallery {
+  width: 58rem;
+  height: 40vh;
+  margin-top: 80px;
+}
+
+.emergency-numbers {
+  width: 58rem;
+  height: 30vh;
+}
+
+.contact-info {
+  width: 25rem;
+  height: 40vh;
+  margin-top: 80px;
+}
+
+.our-story{
+  width: 25rem;
+  height: 40vh;
+  margin-top: 80px;
+  background-color: #1d4c9e;
+}
+
+.illustration {
+    float: left;
+    width: 60%;
+    height: 100%;
+    background-image: url("../img/undraw_certificate_343v.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.about-us-container {
+    float: left;
+    width: 40%;
+    height: 90%;
+    margin-left: -5%;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.about-us-container p{
+    line-height: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    line-height: 22px;
+}
+
+#emergency-numbers {
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+.emergency-container {
+    width: 90%;
+    height: 78%;
+    margin-left: 3%;
+}
+
+.police-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/policeman.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+#police-number {
+    float: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    margin-left: 6%;
+}
+
+.fireman-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img//fireman.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+#fireman-number {
+    float: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    margin-left: 4%;
+}
+
+.ambulance-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/doctor.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    margin-left: 10%;
+}
+
+#ambulance-number {
+    float: left;
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding-top: 25px;
+    margin-left: 4%;
+}
+
+.emergency-tip {
+    width: 76%;
+    height: 30%;
+    margin-left: 5%;
+    background-color: rgba(241, 95, 36, 0.2);
+    margin-top: 120px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.tip-icon {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../img//idea.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 30px;
+    margin-left: 5%;
+}
+
+#tip-text {
+    float: left;
+    width: 78%;
+    margin-top: 26px;
+    margin-left: 5%;
+}
+
+.carousel-inner {
+    height: 36vh;
+}
+
+.carousel-item img {
+    object-fit: fill;
+}
+
+#contact-info {
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 20px;
+}
+
+#our-story {
+  font-weight: bold;
+  margin-left: 3%;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.contact-info-container {
+  width: 90%;
+  height: 80%;
+  margin-left: 3%;
+  margin-top: 20px;
+}
+
+.location-icon {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  margin-left: 8%;
+}
+
+#location {
+  float: left;
+  font-size: 20px;
+  margin-left: 5%;
+  margin-top: 22px;
+}
+
+.phone-icon {
+  float: left;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 80px;
+  margin-left: -40%;
+}
+
+#phone {
+  float: left;
+  font-size: 20px;
+  margin-left: -34%;
+  margin-top: 82px;
+}
+
+.mail-icon {
+  float: left;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  margin-top: 140px;
+  margin-left: -42%;
+}
+
+#mail {
+  float: left;
+  font-size: 20px;
+  margin-left: -36%;
+  margin-top: 142px;
+}
+
+.contact-illustration {
+  width: 70%;
+  height: 180px;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 7%;
+  background-image: url("../img/undraw_phone_call_grmk.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper .sidebar-inner {
+    left: -100%;
+  }
+  .wrapper .main-container,
+  .wrapper .main-container .top-navbar {
+    margin-left: 0;
+    width: 100%;
+  }
+  .wrapper .main-container .top-navbar {
+    left: 0;
+  }
+  .wrapper.active .sidebar-inner {
+    left: 0;
+  }
+  .wrapper .sidebar-inner .close,
+  .wrapper .main-container .top-navbar .hamburger {
+    display: block;
+  }
+  .wrapper.active .sidebar .bg-shadow {
+    visibility: visible;
+    opacity: 0.7;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .wrapper .main-container .top-navbar .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper .main-container .top-navbar {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 415px) {
+  #about-us-text {
+    text-align: center;
+    margin-left: 22%;
+    margin-top: 50px;
+  }
+  .intro {
+    width: 90%;
+    height: 450px;
+    margin-top: 100px;
+  }
+  .illustration {
+    position: absolute;
+    width: 70%;
+    margin-top: -150px;
+    margin-left: 8%;
+  }
+  .about-us-container {
+    width: 350px;
+    margin-left: -65px;
+    margin-top: 0px;
+  }
+  .emergency-numbers {
+    width: 90%;
+    height: 800px;
+    margin-top: 20px;
+  }
+  #emergency-numbers {
+    text-align: center;
+  }
+  .police-icon {
+    margin-left: 25%;
+  }
+  .fireman-icon {
+    margin-left: 25%;
+  }
+  .ambulance-icon {
+    margin-left: 10%;
+  }
+  .emergency-tip {
+    height: 320px;
+    margin-top: 300px;
+  }
+  .tip-icon {
+    margin-left: 40%;
+  }
+  #tip-text {
+    width: 88%;
+    text-align: center;
+    margin-left: 6%;
+  }
+  .gallery {
+    width: 90%;
+    height: 350px;
+    margin-top: 20px;
+  }
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .contact-info {
+    width: 90%;
+    height: 470px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .location-icon {
+    margin-left: 22%;
+  }
+  .phone-icon {
+    margin-left: -55%;
+  }
+  #phone {
+    margin-left: -42%;
+  }
+  .mail-icon {
+    margin-left: -72%;
+  }
+  #mail {
+    margin-left: -66%;
+  }
+  .our-story {
+    width: 90%;
+    height: 470px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 768px) {
+  #about-us-text {
+    text-align: center;
+    margin-left: 36%;
+    margin-top: 50px;
+  }
+  .intro {
+    width: 90%;
+    height: 450px;
+    margin-top: 150px;
+  }
+  .illustration {
+    position: absolute;
+    width: 68%;
+    margin-top: -180px;
+    margin-left: 14%;
+  }
+  .about-us-container {
+    width: 130%;
+    margin-left: -38%;
+    margin-top: 150px;
+  }
+  .emergency-numbers {
+    width: 90%;
+    height: 480px;
+    margin-top: 20px;
+  }
+  #emergency-numbers {
+    text-align: center;
+  }
+  .police-icon {
+    margin-left: 5%;
+  }
+  .fireman-icon {
+    margin-left: 2%;
+  }
+  .ambulance-icon {
+    margin-left: 2%;
+  }
+  .emergency-tip {
+    height: 220px;
+    margin-top: 120px;
+  }
+  .tip-icon {
+    margin-left: 45%;
+  }
+  #tip-text {
+    width: 88%;
+    text-align: center;
+    margin-left: 6%;
+  }
+  .gallery {
+    width: 90%;
+    height: 420px;
+    margin-top: 20px;
+  }
+  .carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+  }
+  .contact-info {
+    width: 90%;
+    height: 470px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .location-icon {
+    margin-left: 15%;
+  }
+  .phone-icon {
+    margin-left: -15%;
+    margin-top: 20px;
+  }
+  #phone {
+    margin-left: 20%;
+    margin-top: 22px;
+  }
+  .mail-icon {
+    margin-left: -58%;
+    margin-top: 80px;
+  }
+  #mail {
+    margin-left: -50%;
+    margin-top: 82px;
+  }
+  .contact-illustration {
+    width: 80%;
+    margin-left: 22%;
+    margin-top: 150px;
+  }
+  .our-story {
+    width: 90%;
+    height: 470px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1919px) and (max-width: 1921px){
+  .cards {
+    margin-left: 6%;
+  }
+  .card {
+    margin-left: 7%;
+  }
+  .intro {
+    width: 41rem;
+  }
+  .gallery {
+    width: 41rem;
+  }
+  .contact-info {
+    width: 18rem;
+  }
+  .our-story {
+    width: 18rem;
+  }
+  .emergency-numbers {
+    width: 42rem;
+  }
+  .illustration {
+    width: 35%;
+    margin-top: 50px;
+    margin-left: 2%;
+  }
+  .about-us-container {
+    width: 55%;
+    margin-left: 5%;
+    margin-top: -20px;
+  }
+  .police-icon {
+    margin-left: 5%;
+  }
+  #police-number {
+    margin-left: 2%;
+  }
+  .fireman-icon {
+    margin-left: 3%;
+  }
+  #fireman-number {
+    margin-left: 2%;
+  }
+  .ambulance-icon {
+    margin-left: 3%;
+  }
+  .emergency-tip {
+    height: 120px;
+    width: 78%;
+    margin-top: 100px;
+  }
+  .tip-icon {
+    margin-left: 5%;
+    margin-top: 35px;
+  }
+  #tip-text {
+    width: 75%;
+    text-align: left;
+    margin-left: 20%;
+    margin-top: -75px;
+  }
+  .location-icon {
+    margin-left: 15%;
+  }
+  .phone-icon {
+    margin-left: -54%;
+    margin-top: 80px;
+  }
+  #phone {
+    margin-left: 35%;
+    margin-top: 25px;
+  }
+  .mail-icon {
+    margin-left: -70%;
+    margin-top: 140px;
+  }
+  #mail {
+    margin-left: 10%;
+    margin-top: 30px;
+  }
+}
+
