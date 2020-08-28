@@ -846,6 +846,30 @@ input:focus, textarea:focus, select:focus {
   transform: rotate(180deg);
 }
 
+.showAll {
+  height: 40px;
+  width: 8%;
+  background-color: #1d4c9e;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: -72%;
+  padding: 10px;
+  transition: all 0.3s ease;
+  position: absolute;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+.showAll:hover {
+  letter-spacing: 0.13rem;
+  background: #1d4c9e;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
 #doctor-address {
   font-size: 14px;
   text-align: center;

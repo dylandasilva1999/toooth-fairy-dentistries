@@ -13,13 +13,13 @@ $(document).ready(function() {
     
         var $parent = $(this).parent();
         $parent.addClass('active');
-        e.preventDefault();
+        //e.preventDefault();
     });
 
     var zindex = 10;
   
   $("div.card").click(function(e){
-    e.preventDefault();
+    //e.preventDefault();
  
     var isShowing = false;
  

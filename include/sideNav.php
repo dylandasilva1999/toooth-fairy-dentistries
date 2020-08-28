@@ -62,7 +62,7 @@
                             <div class="modal-body">
                                 <?php include '../fragments/loginSuccess.php';
                                     echo '
-                                    <button class="yes-btn">Yes</button>
+                                    <a href="../fragments/logout.php"><button class="yes-btn">Yes</button></a>
                                     <button class="no-btn" data-dismiss="modal">No</button>';
                                 ?>
                             </div>

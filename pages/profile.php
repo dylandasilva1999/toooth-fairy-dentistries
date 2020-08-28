@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         
         <!-- WEBSITE TITLE -->
-        <title>TFD | Patients</title>
+        <title>TFD | Profile</title>
         <link rel="icon" href="../assets/img/Logo.svg">
         
         <!-- JQUERY -->
@@ -29,7 +29,7 @@
         
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-        <link rel="stylesheet" href="../assets/css/patients.css">
+        <link rel="stylesheet" href="../assets/css/profile.css">
         <link rel="stylesheet" href="../assets/css/sidenav.css">
         
     </head>
@@ -40,42 +40,10 @@
               
               <div class="container-fluid">
                 <div class="row cards">
-                    <h1 id="patients-text">Patients</h1>
-                    <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">add new patient</button>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg">
-                            <div class="modal-content">
-                                <div class="form-container sign-up-container">
-                                    <form enctype="multipart/form-data" method="post" action="../fragments/addPatient.php" class="input-sign-up-form">
-                                        <h1 id="add-text">Add New Patient</h1>
-                                        <div class="patient-illustration"></div>
-                                        <input type="text" name="pat-fullname" placeholder="Full Name" required/>
-                                        <input type="text" name="pat-address" placeholder="Address" required/>
-                                        <input type="text" name="pat-medical-aid-number" placeholder="Medical Aid Number" required/>
-                                        <input type="text" name="pat-mobile-number" placeholder="Mobile Number" required/>
-                                        <input type="email" name="pat-email" placeholder="Email" required/>     
-                                        <select name="pat-gender" id="pat-gender" required>
-                                            <option value="Male">Male</option>
-                                            <option value="Female">Female</option>
-                                        </select>
-                                        <input type="file" name="pat-profile" class="upload-profile">
-                                        <button class="add-patient-btn">Add Patient</button>
-                                    </form>
-                                </div> <!--Add Patient Container-->
-                            </div>
-                        </div>
-                    </div>
-                    <div class="search-container">
-                        <form method="post">
-                          <input type="text" placeholder="Search Patients" name="search" class="search-bar">
-                          <button type="submit" class="search"><img src="../assets/img/search.svg" class="search-icon"></button>
-                          <input type="submit" class="showAll" name="showall" value="Show All">
-                        </form>
-                    </div>
+                    <h1 id="patients-text">Profile</h1>
                 </div>
-                <div class="row doctors">
-                    <?php showPatients(); ?>
-                </div>
+                <div class="row profile">
+                    <?php showUser(); ?>
             </div>   
         </div>
 

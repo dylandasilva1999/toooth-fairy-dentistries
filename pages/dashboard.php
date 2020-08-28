@@ -36,7 +36,7 @@
 
     <body>
             <?php include "../include/sideNav.php" ?>
-              
+
               <div class="container-fluid">
                 <div class="row cards">
                     <div class="card">
@@ -118,18 +118,7 @@
                                 <div class="tube">
                                     <h1 id="upcoming-text">Upcoming Appointments</h1>
                                 </div>
-                                <div class="patient">
-                                    <img src="../assets/img/warren-wong-VVEwJJRRHgk-unsplash.jpg">
-                                    <p id="patient-name">Ben Stalk</p>
-                                    <p id="patient-medical-number">2934060</p>
-                                    <p id="appointment-time">10:00 AM</p>
-                                </div>
-                                <div class="patient">
-                                    <img src="../assets/img/gian-cescon-00ByEXKcSkA-unsplash.jpg">
-                                    <p id="patient-name">Love Grace</p>
-                                    <p id="patient-medical-number">2934060</p>
-                                    <p id="appointment-time">10:00 AM</p>
-                                </div>
+                                <?php upcomingAppointments(); ?>
                             </div>
                         </div>
                     </div> 

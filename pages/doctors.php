@@ -69,9 +69,10 @@
                         </div>
                     </div>
                     <div class="search-container">
-                        <form action="/action_page.php">
+                        <form method="post">
                           <input type="text" placeholder="Search Doctors" name="search" class="search-bar">
                           <button type="submit" class="search"><img src="../assets/img/search.svg" class="search-icon"></button>
+                          <input type="submit" class="showAll" name="showall" value="Show All">
                         </form>
                     </div>
                 </div>

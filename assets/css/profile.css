@@ -36,10 +36,10 @@ BODY COPY FONTS
 }
 
 /*
-
-STYLISED FONTS
-
-*/
+  
+  STYLISED FONTS
+  
+  */
 
 @font-face {
   font-family: "qanelas_softbold";
@@ -90,10 +90,10 @@ STYLISED FONTS
 }
 
 /*
-
-STRIP THE BOX
-
-*/
+  
+  STRIP THE BOX
+  
+  */
 
 html {
   scroll-behavior: smooth;
@@ -163,50 +163,61 @@ li {
   font-size: 16px;
 }
 
-.log-out:focus, .yes-btn:focus, .log-out:focus, .no-btn:focus, .assign-room:focus, .appointments:focus, [type="submit"]:focus {
-  outline: none;
-}
-
 .wrapper {
   display: flex;
   width: 100%;
 }
 
-.profile-img {
-  height: 120px;
-  width: 125px;
-  margin-top: 40px;
-  border-radius: 50%;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
-}
-
-.profile-img img{
+.profile-img img {
   margin-top: 20px;
   border-radius: 50%;
   box-shadow: 00px 5px 12px rgba(0, 0, 0, 0.3);
-  object-fit: contain;
 }
 
 .name {
-    font-family: "qanelas_softbold";
-    letter-spacing: 2px;
+  font-family: "qanelas_softbold";
+  letter-spacing: 2px;
 }
 
 .role {
-    font-family: "qanelas_softlight";
-    margin-top: -20px;
+  font-family: "qanelas_softlight";
+  margin-top: -20px;
+}
+
+.showAll {
+  height: 40px;
+  width: 8%;
+  background-color: #1d4c9e;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: -72%;
+  padding: 10px;
+  transition: all 0.3s ease;
+  position: absolute;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+.showAll:hover {
+  letter-spacing: 0.13rem;
+  background: #1d4c9e;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
 }
 
 .logo-name {
-    font-family: "qanelas_softbold";
-    color: #fff;
-    font-size: 20px;
+  font-family: "qanelas_softbold";
+  color: #fff;
+  font-size: 20px;
 }
 
 .divider {
-    width: 100%;
-    height: 2px;
-    background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .wrapper .sidebar {
@@ -242,7 +253,6 @@ li {
   margin-left: 12%;
   width: calc(97% - 300px);
   transition: all 0.3s ease;
-
 }
 
 .wrapper .sidebar-inner .profile-info {
@@ -258,7 +268,6 @@ li {
 .wrapper .sidebar-inner .profile-info .profile-img img {
   width: 100%;
   display: block;
-  object-fit: cover;
 }
 
 .wrapper .sidebar-inner .profile-info .profile-data .name {
@@ -286,7 +295,7 @@ li {
   color: #fff;
 }
 
-.wrapper .sidebar-inner .sidebar-menu li {
+.wrapper .sidebar-inner .sidebar-menu li a {
   padding: 10px 50px;
   display: block;
   height: 70px;
@@ -300,37 +309,37 @@ li {
   letter-spacing: 1px;
 }
 
-.wrapper .sidebar-inner .sidebar-menu li i{
-    margin-top: 16px;
+.wrapper .sidebar-inner .sidebar-menu li a i {
+  margin-top: 16px;
 }
 
 .fa-cube {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 .fa-user-md {
-    padding-right: 20px;
-    margin-left: -24px;
+  padding-right: 20px;
+  margin-left: -24px;
 }
 
 .fa-users {
-    padding-right: 16px;
-    margin-left: -25px;
+  padding-right: 16px;
+  margin-left: -25px;
 }
 
 .fa-calendar {
-    padding-right: 20px;
-    margin-left: -16px;
+  padding-right: 20px;
+  margin-left: -16px;
 }
 
 .fa-question-circle {
-    padding-right: 20px;
-    margin-left: -16px;
+  padding-right: 20px;
+  margin-left: -16px;
 }
 
 .fa-user {
-    padding-right: 20px;
-    margin-left: -38px;
+  padding-right: 20px;
+  margin-left: -38px;
 }
 
 #log-out-btn {
@@ -342,26 +351,31 @@ li {
   border-radius: 50px;
   border: 2px solid white;
   background: transparent;
-	color: #FFFFFF;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 10px 40px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: transform 80ms ease-in;
   transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+.log-out:focus, .yes-btn:focus, .log-out:focus, .no-btn:focus, .appointments:focus, [type="submit"]:focus {
+  outline: none;
 }
 
 .yes-btn {
   border-radius: 50px;
   border: 2px solid white;
   background: #2a58ae;
-	color: #FFFFFF;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 10px 40px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: transform 80ms ease-in;
   transition: all 0.3s ease-in-out;
   margin-left: 22%;
@@ -370,13 +384,13 @@ li {
 .no-btn {
   border-radius: 50px;
   border: 2px solid white;
-  background: #F15F24;
-	color: #FFFFFF;
-	font-size: 14px;
-	font-weight: bold;
-	padding: 10px 40px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
+  background: #f15f24;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   transition: transform 80ms ease-in;
   transition: all 0.3s ease-in-out;
   margin-left: 30px;
@@ -388,18 +402,18 @@ li {
 }
 
 button.log-out {
-    transition: all 0.3s ease-in-out;
-    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
-}
-
-button.log-out:hover{
-    letter-spacing: 0.170rem;
-    background: #F15F24;
-    transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
 }
 
 button.log-out:hover {
-    letter-spacing: 0.170rem;
+  letter-spacing: 0.17rem;
+  background: #f15f24;
+  transition: all 0.3s ease-in-out;
+}
+
+button.log-out:hover {
+  letter-spacing: 0.17rem;
 }
 
 .wrapper .sidebar-inner .sidebar-menu li a:before {
@@ -415,7 +429,7 @@ button.log-out:hover {
 
 .wrapper .sidebar-inner .sidebar-menu li a:hover,
 .wrapper .sidebar-inner .sidebar-menu li a.active {
-  background: #F15F24;
+  background: #f15f24;
   color: #fff;
   transform: scale(1.1);
   border-radius: 0px 50px 50px 0px;
@@ -424,13 +438,9 @@ button.log-out:hover {
   letter-spacing: 0.13rem;
 }
 
-.wrapper .sidebar-inner .sidebar-menu li :hover:before,
-.wrapper .sidebar-inner .sidebar-menu li .active:before {
+.wrapper .sidebar-inner .sidebar-menu li a:hover:before,
+.wrapper .sidebar-inner .sidebar-menu li a.active:before {
   display: block;
-}
-
-.sidebar-menu li .active{
-  background-color: #F15F24;
 }
 
 .wrapper .main-container .top-navbar {
@@ -491,6 +501,16 @@ button.log-out:hover {
   display: none;
 }
 
+.illustration {
+  width: 280px;
+  height: 280px;
+  background-image: url("../img/undraw_feeling_proud_qne1.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  float: left;
+  margin-left: 13%;
+}
+
 .wrapper .main-container .top-navbar .menu li a.active,
 .wrapper .main-container .top-navbar .menu li a:hover {
   color: #1fafec;
@@ -549,6 +569,237 @@ button.log-out:hover {
   opacity: 0.5;
 }
 
+.search-container {
+  width: 40%;
+  margin-top: -60px;
+  float: left;
+  margin-left: 55%;
+}
+
+.search-bar {
+  width: 90%;
+  border-radius: 0px;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: #1d4c9e;
+  padding: 10px;
+}
+
+.search {
+  border: none;
+  background: none;
+}
+
+.search-icon {
+  width: 20px;
+  margin-top: -90px;
+  margin-left: 700px;
+}
+
+#add-text {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.add-doctor {
+  float: left;
+  margin-left: 5%;
+}
+
+.btn {
+  height: 40px;
+  width: 10%;
+  background-color: #1d4c9e;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: 5%;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  letter-spacing: 0.13rem;
+  background: #1d4c9e;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+.patient-illustration {
+  width: 70%;
+  height: 280px;
+  margin-top: 40px;
+  background-image: url("../img/undraw_medical_care_movn.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 40px;
+  margin-left: 15%;
+}
+
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+
+button.add-patient-btn{
+  width: 80%;
+	border-radius: 50px;
+	border: 2px solid white;
+  background: linear-gradient(90deg, rgba(42,88,174,1) 0%, rgba(241,95,36,1) 100%);
+  background-size: contain;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 12px 60px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  transition: all 0.3s ease-in-out;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+button.add-patient-btn{
+    transition: all 0.3s ease-in-out;
+    transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
+}
+
+button.add-patient-btn:hover, button.add-patient-btn:focus, button.add-patient-btn:active {
+    letter-spacing: 0.170rem;
+    background: linear-gradient(90deg, rgba(241,95,36,1) 0%, rgba(42,88,174,1) 100%);
+    transition: all 0.3s ease-in-out;
+}
+
+button.add-patient-btn:hover, button.add-patient-btn:focus, button.add-patient-btn:active {
+    letter-spacing: 0.170rem;
+}
+
+input {
+	background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(42,88,174,1);
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 80%;
+}
+
+select {
+	background: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(42,88,174,1);
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 80%;
+}
+
+.modal {
+  height: 2000px;
+  border: none;
+}
+
+.upload-profile {
+  border: none;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+.card {
+  width: 24rem;
+  height: 23rem;
+  margin-left: 4.8%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  margin-top: 60px;
+}
+
+.cards {
+  margin-left: 4.8%;
+}
+
+.user-profile-img img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-left: 28%;
+  margin-top: 20px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.remove-btn {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/criss-cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: 80%;
+  margin-top: -170px;
+  transition: all 0.3s ease-in-out;
+}
+
+.remove-btn:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  transform: rotate(180deg);
+}
+
+.edit-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/edit-profile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  margin-left: 53%;
+  margin-top: -40px;
+  transition: all 0.2s ease-in-out;
+}
+
+.edit-icon:hover {
+  transition: all 0.2s ease-in-out;
+  transform: rotate(90deg);
+}
+
+#user-username {
+  font-size: 22px;
+  text-align: center;
+  padding-top: 25px;
+  font-family: "proxima_novabold";
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#user-email{
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 0px;
+  font-family: "proxima_novaregular";
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#user-gender{
+  font-size: 18px;
+  text-align: center;
+  font-family: "proxima_novaregular";
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: -20px;
+  padding: 10px;
+}
+
+@media (max-width:750px) {
+  .dashboard-cards .card {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 800px) {
   .wrapper .sidebar-inner {
@@ -588,234 +839,52 @@ button.log-out:hover {
 }
 
 @media screen and (max-width: 415px) {
-  .cards {
-    width: 20rem;
-    margin-left: 3%;
+  .card {
+    width: 90%;
+    height: 29rem;
+    margin-top: 40px;
+  }
+  #patients-text {
+    text-align: center;
+    margin-left: 22%;
     margin-top: 50px;
   }
-  .card {
-    margin-top: 10px;
-    margin-left: 3%;
+  .search-container {
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 20px;
   }
-  .total-patients-icon {
-    margin-left: 8%;
-  }
-  .total-doctors-icon {
-    margin-left: 8%;
-  }
-  .total-appointments-icon {
-    margin-left: 8%;
-  }
-  .total-rooms-icon {
-    margin-left: 8%;
-  }
-  .vertical-line {
-    margin-left: 5%;
-  }
-  #card-text {
-    font-size: 16px;
-  }
-  .line-chart {
-    width: 20rem;
-    height: 25rem;
-    margin-left: 8%;
-  }
-  #line-chart {
-    width: 20rem;
-  }
-  .employee-of-the-month-card {
-    width: 19.8rem;
-    height: 25rem;
-  }
-  .male-female-card {
-    width: 19.8rem;
-    margin-left: 8%;
-    height: 25rem;
-  }
-  .male-female-patients {
-    margin-top: -35px;
-  }
-  .illustration {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .employees-card {
-    width: 41rem;
-    margin-left: 8.5%;
-    margin-top: 30px;
-  }
-  .employee-name-img {
-    margin-left: -18%;
-  }
-  .upcoming-appointments-card {
-    width: 65.5rem;
-  }
-  #employees {
-    text-align: center;
-    padding-right: 50px;
-  }
-  #patient-name {
-    margin-left: 8%;
-  }
-  #patient-medical-number {
-    margin-left: 8%;
-  }
-  #appointment-time {
-    margin-left: 8%;
-  }
-  .patient {
-    margin-left: 5%;
+  .appointments {
+    margin-left: 23%;
   }
 }
 
 @media screen and (min-width: 767px) and (max-width: 768px) {
-  .cards {
-    margin-left: 3%;
+  .card {
+    width: 43%;
+    height: 29rem;
+    margin-top: 40px;
+  }
+  #patients-text {
+    text-align: center;
+    margin-left: 36%;
     margin-top: 50px;
   }
-  .card {
-    width: 20rem;
-    margin-top: 10px;
-    margin-left: 3%;
+  .search-container {
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 20px;
   }
-  .total-patients-icon {
-    margin-left: 8%;
-  }
-  .total-doctors-icon {
-    margin-left: 8%;
-  }
-  .total-appointments-icon {
-    margin-left: 8%;
-  }
-  .total-rooms-icon {
-    margin-left: 8%;
-  }
-  .vertical-line {
-    margin-left: 5%;
-  }
-  #card-text {
-    font-size: 18px;
-  }
-  .line-chart {
-    width: 41rem;
-    height: 25rem;
-    margin-left: 8%;
-  }
-  #line-chart {
-    width: 40rem;
-  }
-  .employee-of-the-month-card {
-    width: 19.8rem;
-    height: 25rem;
-  }
-  .male-female-card {
-    width: 19.8rem;
-    margin-left: 8%;
-    height: 25rem;
-  }
-  .male-female-patients {
-    margin-top: -35px;
-  }
-  .illustration {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .employees-card {
-    width: 41rem;
-    margin-left: 8.5%;
-    margin-top: 30px;
-  }
-  .employee-name-img {
-    margin-left: -18%;
-  }
-  .upcoming-appointments-card {
-    width: 41rem;
-    margin-left: 8%;
-  }
-  #employees {
-    text-align: center;
-    padding-right: 50px;
-  }
-  #patient-name {
-    margin-left: 8%;
-  }
-  #patient-medical-number {
-    margin-left: 8%;
-  }
-  #appointment-time {
-    margin-left: 8%;
-  }
-  .patient {
-    margin-left: 5%;
+  .appointments {
+    margin-left: 23%;
   }
 }
 
 @media screen and (min-width: 1919px) and (max-width: 1921px){
   .cards {
-    margin-left: 5%;
-    margin-top: -30px;
+    margin-left: 6%;
   }
   .card {
-    width: 20rem;
-    margin-top: 10px;
-    margin-left: 3%;
-  }
-  .line-chart {
-    width: 42.5rem;
-    height: 25rem;
-    margin-left: 8.5%;
-  }
-  #line-chart {
-    width: 52rem;
-  }
-  #card-text {
-    font-size: 18px;
-  }
-  .vertical-line {
-    margin-left: 5%;
-  }
-  .total-patients-icon {
-    margin-left: 8%;
-  }
-  .total-doctors-icon {
-    margin-left: 8%;
-  }
-  .total-appointments-icon {
-    margin-left: 8%;
-  }
-  .total-rooms-icon {
-    margin-left: 8%;
-  }
-  .employee-of-the-month-card {
-    height: 25rem;
-  }
-  .male-female-card {
-    height: 25rem;
-  }
-  .male-female-patients {
-    margin-top: -35px;
-  }
-  .illustration {
-    width: 80%;
-    margin-left: 10%;
-  }
-  .employees-card {
-    margin-left: 8.5%;
-    margin-top: 10px;
-  }
-  .upcoming-appointments-card {
-    width: 65.5rem;
-  }
-  #patient-name {
-    margin-left: 2%;
-  }
-  #patient-medical-number {
-    margin-left: 2%;
-  }
-  #appointment-time {
-    margin-left: 2%;
-  }
-  .patient {
-    margin-left: -5%;
+    margin-left: 7%;
   }
 }
