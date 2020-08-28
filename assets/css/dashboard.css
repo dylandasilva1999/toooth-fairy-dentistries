@@ -870,6 +870,7 @@ button.log-out:hover {
   .employee-of-the-month-card {
     width: 19.8rem;
     height: 25rem;
+    margin-left: 8% !important;
   }
   .male-female-card {
     width: 19.8rem;
@@ -878,13 +879,14 @@ button.log-out:hover {
   }
   .male-female-patients {
     margin-top: -35px;
+    margin-left: 3%;
   }
   .illustration {
     width: 80%;
     margin-left: 10%;
   }
   .employees-card {
-    width: 41rem;
+    width: 19.8rem !important;
     margin-left: 8.5%;
     margin-top: 30px;
   }
@@ -893,6 +895,11 @@ button.log-out:hover {
   }
   .upcoming-appointments-card {
     width: 65.5rem;
+  }
+  #upcoming-text{
+    font-size: 22px;
+    padding-left: 10px;
+    padding-top: 10px;
   }
   #employees {
     text-align: center;
@@ -905,7 +912,7 @@ button.log-out:hover {
     margin-left: 8%;
   }
   #appointment-time {
-    margin-left: 8%;
+    display: none;
   }
   .patient {
     margin-left: 5%;

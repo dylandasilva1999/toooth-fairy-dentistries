@@ -178,6 +178,9 @@ li {
   margin-top: 40px;
   border-radius: 50%;
   box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+  background-image: url("../img/alex-suprun-ZHvM3XIOHoE-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .profile-img img{

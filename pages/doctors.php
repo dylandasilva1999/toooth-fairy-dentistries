@@ -42,11 +42,11 @@
                 <div class="row cards">
                     <h1 id="doctors-text">Doctors</h1>
                     <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">add new doctor</button>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade bd-example-modal-lg" id="add-doctor-modal"tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="form-container sign-up-container">
-                                    <form enctype="multipart/form-data" method="post" action="../fragments/addDoctor.php" class="input-sign-up-form">
+                                    <form enctype="multipart/form-data" method="post" action="../fragments/addDoctor.php" class="input-sign-up-form add-doctor-form">
                                         <h1 id="add-text">Add New Doctor</h1>
                                         <div class="doctor-illustration"></div>
                                         <input type="text" name="doc-fullname" placeholder="Full Name" required/>

@@ -961,25 +961,56 @@ input:focus, textarea:focus, select:focus {
 
 @media screen and (max-width: 415px) {
   .card {
-    width: 90%;
+    width: 85%;
     height: 31rem;
     margin-top: 40px;
+    margin-left: 7% !important;
   }
   #doctors-text {
     text-align: center;
-    margin-left: 22%;
-    margin-top: 50px;
+    margin-left: 28%;
+    margin-top: 80px;
   }
   .search-container {
     width: 90%;
     margin-left: 2%;
     margin-top: 20px;
   }
+  .btn {
+    width: 60%;
+    margin-left: -75%;
+  }
+  .showAll {
+    width: 35%;
+    margin-left: 60%;
+    margin-top: -350px;
+  }
+  .search-bar {
+    width: 150%;
+    margin-top: 10px;
+    margin-left: 10%;
+  }
+  .search-icon {
+    margin-top: -70px;
+    margin-left: 330px;
+  }
   .appointments {
     margin-left: 23%;
   }
+  #add-text {
+    margin-top: 400px;
+  }
+  .add-doctor-form {
+    margin-top: -400px;
+  }
   .doctors-profile-img {
-    margin-left: 25%;
+    margin-left: -8%;
+  }
+  .doctor-illustration{
+    height: 100px;
+  }
+  button.add-doctor-btn {
+    width: 90%;
   }
   .assign-room {
     width: 112%;
@@ -999,21 +1030,47 @@ input:focus, textarea:focus, select:focus {
 @media screen and (min-width: 767px) and (max-width: 768px) {
   .card {
     width: 43%;
-    height: 31rem;
+    height: 28rem;
+    margin-left: 6% !important;
     margin-top: 40px;
   }
   #doctors-text {
     text-align: center;
     margin-left: 36%;
-    margin-top: 50px;
+    margin-top: 70px;
   }
   .doctors-profile-img {
-    margin-left: 24%;
+    margin-left: -5%;
   }
   .search-container {
     width: 95%;
     margin-left: 2%;
     margin-top: 20px;
+  }
+  .search-bar {
+    width: 110%;
+    margin-top: 10px;
+    margin-left: -4%;
+  }
+  .search-icon {
+    margin-top: -70px;
+    margin-left: 750px;
+  }
+  .btn {
+    width: 24%;
+    margin-left: -35%;
+  }
+  .showAll {
+    width: 24%;
+    margin-left: 22%;
+    margin-top: -330px;
+  }
+  .modal-content {
+    width: 600px;
+    margin-left: -10%;
+  }
+  .doctor-illustration{
+    height: 250px;
   }
   .assign-room {
     width: 112%;
@@ -1032,10 +1089,36 @@ input:focus, textarea:focus, select:focus {
 
 @media screen and (min-width: 1919px) and (max-width: 1921px){
   .cards {
-    margin-left: 6%;
+    margin-top: 20px !important;
+    margin-left: 8% !important;
   }
   .card {
-    margin-left: 7%;
+    width: 23rem !important;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+  .doctors {
+    margin-top: 30px;
+    margin-left: 5%;
+  }
+  .showAll {
+    margin-left: -62%;
+    margin-top: -30px;
+  }
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 50%;
+  }
+  .search-icon {
+    margin-top: -70px;
+    margin-left: 750px;
+  }
+  .btn {
+    width: 12%;
+  }
+  .log-out {
+    margin-top: -70px;
   }
 }
 
