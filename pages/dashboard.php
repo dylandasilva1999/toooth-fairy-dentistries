@@ -30,6 +30,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
         <link rel="stylesheet" href="../assets/css/dashboard.css">
+        <link rel="stylesheet" href="../assets/css/sidenav.css">
         
     </head>
 
@@ -73,7 +74,7 @@
                             <div class="total-rooms">
                                 <div class="total-rooms-icon"></div>
                                 <div class="vertical-line"></div>
-                                <h3 id="total-rooms">10</h3>
+                                <h3 id="total-rooms">6</h3>
                                 <o id="card-text">Total Rooms</p>
                             </div>
                         </div>

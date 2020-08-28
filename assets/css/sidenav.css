@@ -89,6 +89,61 @@ STYLISED FONTS
   font-style: normal;
 }
 
+/*
+
+STRIP THE BOX
+
+*/
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a0eacf;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #73a895;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "proxima_novaregular";
+  width: 100%;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: white;
+}
 
 h1 {
   font-family: "qanelas_softbold";
@@ -221,7 +276,7 @@ li {
   color: #fff;
 }
 
-.wrapper .sidebar-inner .sidebar-menu li a {
+.wrapper .sidebar-inner .sidebar-menu li {
   padding: 10px 50px;
   display: block;
   height: 70px;
@@ -235,7 +290,7 @@ li {
   letter-spacing: 1px;
 }
 
-.wrapper .sidebar-inner .sidebar-menu li a i{
+.wrapper .sidebar-inner .sidebar-menu li i{
     margin-top: 16px;
 }
 
@@ -359,9 +414,13 @@ button.log-out:hover {
   letter-spacing: 0.13rem;
 }
 
-.wrapper .sidebar-inner .sidebar-menu li a:hover:before,
-.wrapper .sidebar-inner .sidebar-menu li a.active:before {
+.wrapper .sidebar-inner .sidebar-menu li :hover:before,
+.wrapper .sidebar-inner .sidebar-menu li .active:before {
   display: block;
+}
+
+.sidebar-menu li .active{
+  background-color: #F15F24;
 }
 
 .wrapper .main-container .top-navbar {
@@ -422,16 +481,6 @@ button.log-out:hover {
   display: none;
 }
 
-.illustration {
-  width: 280px;
-  height: 280px;
-  background-image: url("../img/undraw_feeling_proud_qne1.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  float: left;
-  margin-left: 13%;
-}
-
 .wrapper .main-container .top-navbar .menu li a.active,
 .wrapper .main-container .top-navbar .menu li a:hover {
   color: #1fafec;
@@ -490,254 +539,6 @@ button.log-out:hover {
   opacity: 0.5;
 }
 
-.card {
-  width: 26rem;
-  margin-left: 4.8%;
-  border: 1px solid rgba(0, 0, 0, 0.04);
-  height: 180px;
-}
-
-.total-patients-icon {
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border-radius: 50%;
-  margin-left: 15%;
-  margin-top: 35px;
-  float: left;
-  background-image: url("../img/patient.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.total-doctors-icon {
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border-radius: 50%;
-  margin-left: 15%;
-  margin-top: 35px;
-  float: left;
-  background-image: url("../img/doctors.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.total-appointments-icon {
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border-radius: 50%;
-  margin-left: 15%;
-  margin-top: 35px;
-  float: left;
-  background-image: url("../img/appointments.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.total-rooms-icon {
-  width: 70px;
-  height: 70px;
-  background-color: transparent;
-  border-radius: 50%;
-  margin-left: 15%;
-  margin-top: 35px;
-  float: left;
-  background-image: url("../img/rooms.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.vertical-line {
-  width: 6px;
-  height: 40px;
-  background-color: #F15F24;
-  float: left;
-  margin-left: 30px;
-  margin-top: 50px;
-}
-
-#total-patients {
-  float: left;
-  margin-left: 9%;
-  margin-top: 40px;
-  font-family: "proxima_novabold";
-  opacity: 1;
-  font-size: 30px;
-}
-
-#total-doctors {
-  float: left;
-  margin-left: 9%;
-  margin-top: 40px;
-  font-family: "proxima_novabold";
-  opacity: 1;
-  font-size: 30px;
-}
-
-#total-appointments {
-  float: left;
-  margin-left: 9%;
-  margin-top: 40px;
-  font-family: "proxima_novabold";
-  opacity: 1;
-  font-size: 30px;
-}
-
-#total-rooms {
-  float: left;
-  margin-left: 9%;
-  margin-top: 40px;
-  font-family: "proxima_novabold";
-  opacity: 1;
-  font-size: 30px;
-}
-
-#card-text {
-  float: right;
-  margin-right: 14%;
-  margin-top: -10px;
-  font-family: "proxima_novaregular";
-  opacity: 0.5;
-  font-size: 22px;
-}
-
-.line-chart {
-  width: 58.5rem;
-  height: 28rem;
-  margin-top: 65px;
-}
-
-#line-chart {
-  width: 26rem;
-  height: 28rem;
-  margin-top: 30px;
-}
-
-.male-female-card {
-  width: 26rem;
-  height: 28rem;
-  margin-top: 65px;
-}
-
-.employee-of-the-month-card {
-  height: 28rem;
-  margin-top: 65px;
-  background: #F15F24;
-}
-
-.upcoming-appointments-card {
-  width: 91rem;
-  height: 23rem;
-  margin-top: 65px;
-}
-
-.employees-card {
-  width: 26rem;
-  height: 23rem;
-  margin-top: 65px;
-  background: #1d4c9e;
-}
-
-#employees {
-  color: #fff;
-  margin-left: 10%;
-  margin-top: 20px;
-}
-
-#employee-of-the-month {
-  font-family: "proxima_novabold";
-  color: #fff;
-  margin-left: 10%;
-  margin-top: 20px;
-}
-
-#employee {
-  color: #fff;
-  margin-left: 10%;
-  margin-top: 20px;
-  font-size: 20px;
-  float: left;
-}
-
-.employee-img img{
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  float: left;
-  margin-left: 10%;
-  object-fit: cover;
-  border: 3px solid #fff;
-}
-
-.employee-name-img img{
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-left: 18%;
-  border: 3px solid #fff;
-  float: left;
-  margin-top: 10px;
-}
-
-#employee-name {
-  float: left;
-  margin-left: 5%;
-  padding-top: 10px;
-  color: #fff;
-}
-
-#upcoming-text {
-  float: left;
-  margin-left: 5%;
-  margin-top: 0px;
-  color: #fff;
-}
-
-.tube {
-  width: 90%;
-  height: 70px;
-  margin-left: 5%;
-  padding-top: 10px;
-  margin-top: 20px;
-  border-radius: 50px;
-  background-color: #F15F24;
-}
-
-.patient img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-left: 9%;
-  border: 3px solid #fff;
-  float: left;
-  margin-top: 40px;
-  border: 3px solid #1d4c9e;
-}
-
-#patient-name {
-  float: left;
-  padding-top: 40px;
-  margin-left: 40px;
-  font-family: "proxima_novabold";
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-#patient-medical-number {
-  float: left;
-  padding-top: 40px;
-  margin-left: 40px;
-  font-size: 20px;
-}
-
-#appointment-time {
-  float: left;
-  padding-top: 40px;
-  margin-left: 40px;
-  font-size: 20px;
-}
 
 @media screen and (max-width: 800px) {
   .wrapper .sidebar-inner {

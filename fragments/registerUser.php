@@ -2,7 +2,6 @@
 
     require "connection.php" ;
 
-
     if(!empty($_POST['reg-username']) || !empty($_POST['reg-password']) || !empty($_POST['reg-email']) || !empty($_FILES['user-profile']) || !empty($_POST['reg-gender'])){
 
         $mysqli = new mysqli('localhost', 'root', '', 'toooth_fairy_dentistries_db');
