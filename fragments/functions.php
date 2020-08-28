@@ -258,7 +258,7 @@
                         </div>
                         <p id="doctor-address">'.$doctorAddress.'</p>
                         <div id="appointments-btn">
-                                <button type="button" class="appointments">Appointments</button>
+                                <button type="button" class="appointments" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Here will be a list of bookings!">Appointments</button>
                         </div>   
                         </div>
                 </div> <!--Card-->
@@ -325,7 +325,7 @@
                                 <p id="patient-medical-aid-number">'.$patientMedNum.'</p>
                             </div>
                             <button type="button" class="appointments" data-container="body" data-toggle="popover" data-placement="bottom" 
-                            data-content="No Appointments for today!">
+                            data-content="Here will be a list of bookings!">
                                 Appointments
                             </button>
                         </div>
@@ -351,12 +351,10 @@
         if($result = $mysqli->query($sql)){
             while($row = $result->fetch_assoc()){
                 $patientFullName = $row["patient_fullname"];
-                $patientMedNum = $row["patient_medical_aid_number"];
-                $patientAddress = $row["patient_address"];
     
                 echo '
                 
-                <option>'.$patientFullName. " : " .$patientMedNum. " : " .$patientAddress.'</option>
+                <option>'.$patientFullName.'</option>
                 
                 ';
             }
@@ -381,9 +379,8 @@
         if($result = $mysqli->query($sql)){
             while($row = $result->fetch_assoc()){
                 $doctorFullName = $row["doctor_full_name"];
-                $doctorSpecialisation = $row["doctor_specialisation"];
     
-                echo '<option>'.$doctorFullName. " : " .$doctorSpecialisation.'</option>';
+                echo '<option>'.$doctorFullName.'</option>';
     
             }
         }

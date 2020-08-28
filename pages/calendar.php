@@ -75,9 +75,10 @@
                         </div>
                     </div>
                     <div class="search-container">
-                        <form action="/action_page.php">
+                        <form method="POST">
                           <input type="text" placeholder="Search Appointments" name="search" class="search-bar">
                           <button type="submit" class="search"><img src="../assets/img/search.svg" class="search-icon"></button>
+                          <input type="submit" class="showAll" name="showall" value="Show All">
                         </form>
                     </div>
                 </div>
@@ -92,34 +93,7 @@
                                 <li>ROOM</li>
                             </ul>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <p id="patient-num">1</p>
-                                <div class="patient-profile-img">
-                                    <img src="../assets/img/ashkan-forouzani-DPEPYPBZpB8-unsplash.jpg">
-                                </div>
-                                <div class="divider"></div>
-                                <div class="patient-info">
-                                    <div class="patient">
-                                        <p id="patient-name">Erik Black</p>
-                                        <p id="patient-address">5 Grove Street</p>
-                                    </div>
-                                    <div class="doctor-info">
-                                        <p id="doctor-name">Dylan da Silva</p>
-                                        <p id="doctor-specialisation">Teeth Whitening</p>
-                                    </div>
-                                    <div class="patient-medical-aid-num">
-                                        <p id="patient-medical-aid-number">23485690</p>
-                                    </div>
-                                    <div class="patient-appointment">
-                                        <p id="patient-appointment">12 April 2020 @ 12:30 PM</p>
-                                    </div>
-                                    <div class="room-number">
-                                        <p id="appointment-room-number">B3 Floor 1</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php include "../fragments/bookingFilter.php" ?>
                     </div>
                 </div>
 

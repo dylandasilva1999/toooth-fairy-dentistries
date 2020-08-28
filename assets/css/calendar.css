@@ -769,6 +769,29 @@ button.assign-room-btn {
     transition: all 0.5s cubic-bezier(0.65, -0.25, 0.25, 1.95);
 }
 
+.showAll {
+  height: 40px;
+  width: 8%;
+  background-color: #1d4c9e;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-left: -65%;
+  padding: 10px;
+  transition: all 0.3s ease;
+  position: absolute;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.showAll:hover {
+  letter-spacing: 0.13rem;
+  background: #1d4c9e;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
 button.assign-room-btn:hover, button.assign-room-btn:focus, button.assign-room-btn:active  {
     letter-spacing: 0.170rem;
     background: linear-gradient(90deg, rgba(241,95,36,1) 0%, rgba(42,88,174,1) 100%);
@@ -798,6 +821,23 @@ form {
 	padding: 0 50px;
 	height: 100%;
   text-align: center;
+}
+
+.remove-btn {
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/criss-cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 100%;
+  margin-top: -70px;
+  transition: all 0.3s ease-in-out;
+}
+
+.remove-btn:hover {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.1);
+  transform: rotate(180deg);
 }
 
 .room-illustration {
