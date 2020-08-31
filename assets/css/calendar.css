@@ -1011,15 +1011,25 @@ form {
 
 @media screen and (min-width: 1919px) and (max-width: 1921px){
   .cards {
-    margin-left: 8%;
+    margin-top: 20px !important;
+    margin-left: 8% !important;
+  }
+  .card {
+    width: 95% !important;
+    margin-top: 30px;
+    margin-left: 10%;
   }
   .card-container {
     margin-left: 9%;
   }
+  .showAll {
+    margin-left: -45%;
+    margin-top: -50px;
+  }
   .search-container {
     width: 60%;
-    margin-left: 22%;
-    margin-top: 0px;
+    margin-left: 45%;
+    margin-top: -40px;
   }
   .divider {
     margin-left: 1.5%;
@@ -1032,5 +1042,33 @@ form {
   }
   .room-number {
     margin-left: 80%;
+  }
+  .headings li {
+    margin-left: 150px;
+  }
+  .btn {
+    width: 16% !important;
+    margin-left: 2%;
+  }
+  #make-appointment-modal {
+    margin-top: -80px !important;
+  }
+  .patient {
+    margin-left: -3% !important;
+  }
+  #patient-address {
+    margin-left: 2% !important;
+  }
+  .doctor-info {
+    margin-left: 16% !important;
+  }
+  .patient-medical-aid-num {
+    margin-left: 40% !important;
+  }
+  .patient-appointment {
+    margin-left: -6% !important;
+  }
+  .room-number {
+    margin-left: -40% !important;
   }
 }

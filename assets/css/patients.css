@@ -940,9 +940,41 @@ input:focus, textarea:focus, select:focus {
 
 @media screen and (min-width: 1919px) and (max-width: 1921px){
   .cards {
-    margin-left: 6%;
+    margin-top: 20px !important;
+    margin-left: 8% !important;
   }
   .card {
-    margin-left: 7%;
+    width: 23rem !important;
+    margin-top: 30px;
+    margin-left: 10%;
+  }
+  .doctors {
+    margin-top: 30px;
+    margin-left: 5%;
+  }
+  .showAll {
+    margin-left: -62%;
+    margin-top: -30px;
+  }
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 50%;
+  }
+  .search-icon {
+    margin-top: -70px;
+    margin-left: 750px;
+  }
+  .btn {
+    width: 12%;
+  }
+  .log-out {
+    margin-top: -70px;
+  }
+  #modal-add-patient {
+    margin-top: -80px !important;
+  }
+  .edit-container-two {
+    width: 30% !important;
   }
 }

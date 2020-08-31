@@ -1120,5 +1120,8 @@ input:focus, textarea:focus, select:focus {
   .log-out {
     margin-top: -70px;
   }
+  .edit-container-two {
+    width: 1000px !important;
+  }
 }
 

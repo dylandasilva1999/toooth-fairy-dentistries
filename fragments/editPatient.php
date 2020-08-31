@@ -29,7 +29,7 @@ function editPatient(){
 
             echo '
                 <div class="form-container edit-container-two">
-                    <form enctype="multipart/form-data" method="post" action="updatePatient.php?id='.$patientID.'" class="input-sign-up-form">
+                    <form enctype="multipart/form-data" method="post" action="updatePatient.php?id='.$patientID.'" class="input-sign-up-form edit-container-patient">
                         <h1 id="add-text">Edit Patient Details</h1>
                         <img class="current-profile-image" name="pat-profile" src="../assets/img/'.$patientProfileImg.'">
                         <input type="file" name="new-pat-profile" class="upload-profile" src="../assets/img/'.$patientProfileImg.'">

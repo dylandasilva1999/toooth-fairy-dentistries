@@ -42,7 +42,7 @@
                 <div class="row cards">
                     <h1 id="patients-text">Patients</h1>
                     <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">add new patient</button>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="modal-add-patient">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="form-container sign-up-container">

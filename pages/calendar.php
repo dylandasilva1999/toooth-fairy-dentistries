@@ -43,7 +43,7 @@
                 <div class="row cards">
                     <h1 id="appointments-text">Appointments</h1>
                     <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-lg">Book Appointment</button>
-                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" id="make-appointment-modal">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content">
                                 <div class="form-container sign-up-container">
@@ -69,7 +69,7 @@
                                         <select name="doc-full-info" id="doc-full-name" required>
                                             <?php assignDoctor(); ?>
                                         </select>
-                                        <button class="assign-room-btn">Book Appointment</button>
+                                        <button class="assign-room-btn booking-btn">Book Appointment</button>
                                     </form>
                                 </div> <!--Add Doctor Container-->
                             </div>
