@@ -12,6 +12,14 @@
 <br>
 # Dashboard Design
 ![image4][image4]
+
+<!-- PROMO VIDEO -->
+## Promo Video
+
+To see the promo video, click below:
+
+[View Promo Video](https://www.youtube.com/watch?v=wUJKSrWRdL4)
+
  
 <!-- MARKDOWN LINKS & IMAGES -->
 [image1]: Images/DylandaSilva_TooothFairyDentistries_Image1.jpg
